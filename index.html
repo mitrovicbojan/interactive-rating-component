@@ -1,54 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <link rel="stylesheet" href="style.css">
-  
-  <title>Frontend Mentor | Interactive rating component</title>
-
-<body>
-  <!-- Rating state start -->
-<div class="container">
-  <div class="card">
-    <img class="image" src="./images/icon-star.svg" alt="star">
-    <h1 class="title">How did we do?</h1>
-    <p class="description">Please let us know how we did with your support request. All feedback is appreciated 
-  to help us improve our offering!</p>
-  <div class="buttons">
-    <button>1</button>
-    <button>2</button>
-    <button>3</button>
-    <button>4</button>
-    <button>5</button>
-
-  </div>
-  <button class="submit">Submit</button>
-  </div>
-</div>
-  
-
-  
-
-  1 2 3 4 5
-
-  Submit
-
-  <!-- Rating state end -->
-
-  <!-- Thank you state start -->
-
-  You selected <!-- Add rating here --> out of 5
-
-  Thank you!
-
-  We appreciate you taking the time to give a rating. If you ever need more support, 
-  don’t hesitate to get in touch!
-
-  <!-- Thank you state end -->
-
-  
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Frontend Mentor | Interactive rating component</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="card">
+        <div id="form" class="form">
+          <img class="image" src="./images/icon-star.svg" alt="star" />
+          <h1 class="title">How did we do?</h1>
+          <p class="description">
+            Please let us know how we did with your support request. All
+            feedback is appreciated to help us improve our offering!
+          </p>
+          <div class="buttons">
+            <button class="one" id="btn1">1</button>
+            <button class="two">2</button>
+            <button class="three">3</button>
+            <button class="four">4</button>
+            <button class="five">5</button>
+          </div>
+          <button id="submit" class="submit">Submit</button>
+        </div>
+      </div>
+      <div id="output" class="output">
+        <img src="./images/illustration-thank-you.svg" />
+        <h3>You selected 4 out of 5</h3>
+        <h1 class="title">Thank you!</h1>
+        <p class="output-desc">
+          We appreciate you taking the time to give a rating. If you ever need
+          more support, don’t hesitate to get in touch!
+        </p>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
 </html>

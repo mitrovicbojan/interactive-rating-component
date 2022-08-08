@@ -86,3 +86,29 @@ p {
   background-color: var(--white);
   color: var(--orange);
 }
+
+.output {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.output p {
+  text-align: center;
+  font-size: 1rem;
+  color: var(--light-grey);
+}
+.output img {
+  margin-bottom: 25px;
+}
+h3 {
+  padding: 10px;
+  border-radius: 25px;
+  color: var(--orange);
+  font-weight: 400;
+  font-size: 1rem;
+  background-color: var(--medium-grey);
+}
+.inactive {
+  display: none;
+}
