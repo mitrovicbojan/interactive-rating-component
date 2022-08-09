@@ -5,7 +5,8 @@ const form = document.getElementById("form");
 const output = document.getElementById("output");
 
 submitBtn.addEventListener("click", function () {
-  console.log("click");
+  output.classList.remove("inactive");
+  form.classList.add("inactive");
 });
 
 /* <div id="output" class="output">
