@@ -30,8 +30,15 @@ p {
   padding: 35px;
   max-width: 350px;
   height: auto;
-  background-color: var(--dark-blue);
   margin: 25px;
+  background: radial-gradient(
+      circle at center 5px,
+      #222,
+      red,
+      green,
+      black 100%
+    )
+    no-repeat;
 }
 
 .image {
@@ -68,6 +75,13 @@ p {
 }
 .buttons button:hover {
   background-color: var(--orange);
+}
+.buttons button:focus {
+  background-color: red;
+  outline: red;
+  transition: 0.3s ease-in-out;
+
+  transform: scale(1.1) perspective(0px);
 }
 .submit {
   width: 100%;
